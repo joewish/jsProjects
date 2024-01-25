@@ -1,5 +1,6 @@
 body {
-  background-image: linear-gradient(black, blue);
+  background: linear-gradient(172deg, rgba(2, 0, 65, 1) 28%, rgba(49, 220, 255, 1) 100%);
+
 }
 
 * {
@@ -135,6 +136,7 @@ topnav img {
   /* cursor:pointer;
     overflow: hidden; */
 }
+
 .fa-regular:hover {
   color: red;
   overflow: hidden;
@@ -418,7 +420,7 @@ ssome {
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
 @media screen and (max-width: 600px) {
 
-  .topnav a,
+  /* .topnav a,
   .topnav input[type=text] {
     float: none;
     display: block;
@@ -430,5 +432,151 @@ ssome {
 
   .topnav input[type=text] {
     border: 1px solid #ccc;
+  } */
+  * {
+    font-size: 0.8rem;
   }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 7rem;
+    border: 2px solid #ccc;
+  }
+
+  .topnav a:nth-child(1) {
+    position: absolute;
+    top: 2%;
+    margin-left: -2%;
+    margin-top: -2%;
+  }
+
+  .topnav a:nth-child(2) {
+    position: absolute;
+    margin-left: -2%;
+    top: 50%;
+  }
+
+  #searchBar {
+    display: none;
+  }
+
+  #profliePhoto {
+    position: absolute;
+    right: 13%;
+    z-index: 2;
+  }
+
+  #queue {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: -2%;
+    height: 17rem;
+  }
+
+  #queueDeatils {
+    width: 70%;
+    margin-left: 0.1%;
+    overflow: scroll;
+    font-size: 1.2rem;
+  }
+
+  #titleCardBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: scroll;
+  }
+
+  #latestReleaseBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: scroll;
+    border: 1px solid white;
+    height: auto;
+  }
+
+  .songitems {
+    width: 80%;
+  }
+
+  .songitems img {
+    width: 30%;
+  }
+
+  #popularArtists {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: scroll;
+    justify-content: space-around;
+  }
+
+  #popularArtists div {
+    margin: 2%;
+  }
+
+  .artistImg {
+    height: 9rem;
+    width: 9rem;
+  }
+
+  #stationsBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: scroll;
+    justify-content: space-around;
+  }
+
+  #stationsBox div:nth-child(1) {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  #stationsBox div {
+    margin: 2%;
+  }
+
+  #albumcategory,
+  #latestEnglish,
+  #latestHindi,
+  .container-audio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: scroll;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .container-audio {
+    justify-content: center;
+    height: 10rem;
+    width: 20rem;
+  }
+
+  .containerAudioInfo {
+    position: relative;
+  }
+
+  .containerAudioInfo div {
+    position: absolute;
+  }
+
+  audio {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+  }
+
 }
